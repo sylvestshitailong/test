@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html><head>
+    <!-- base href="http://video.loveshufa.net.cn:9030/h5/" -->
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="about_files/frozen.css" media="all">
+<link rel="stylesheet" type="text/css" href="about_files/style.css" media="all">
+<link rel="stylesheet" type="text/css" href="about_files/iconfont.css" media="all">
+
+<!--<link rel="stylesheet" type="text/css" href="css/theme_huangjin.css?=222" media="all">-->
+<script src="about_files/zepto.js"></script>
+<script src="about_files/frozen.js"></script>
+<script src="about_files/vue.js"></script>
+<script src="about_files/common3.js"></script>    
+
+<style>
+    .ui-slider-indicators li{
+        background-color: #e0d11d;
+    }
+    .xin000 {
+        position: absolute;
+        z-index: 20;
+        left:14%;
+        bottom: 45px;
+    }
+</style></head>
+
+<body>
+
+<header id="header" class="ui-header ui-header-positive ui-border-b">
+    <h1>
+我的</h1>
+</header>
+
+
+<footer id="footer" class="ui-footer ui-footer-stable ui-border-t" style="z-index:9999">
+            <ul class="ui-tiled ui-border-t">
+                <li data-href="/s1/index.html"><i class="iconfont"></i>体验区</li>
+                <li data-href="/s1/lsj.html"><i class="iconfont">®</i>老司机<img class="xin000" src="about_files/xin.gif"></li>
+                <li data-href="/s1/gold.html"><i class="iconfont"></i>黄金区</li>
+                <li data-href="/s1/diamond.html"><i class="iconfont">ℜ</i>钻石区</li>
+                <li data-href="/s1/pic.html"><i class="iconfont">Ρ</i>色图</li>
+                <li data-href="/s1/channel.html"><i class="iconfont"></i>频道区</li>
+                <li class="active" data-href="/s1/about.html"><i class="iconfont"></i>我的</li>
+            </ul>
+        </footer>
+            
+<div id="container"></div>            
+<script src="about_files/sysnotice.js"></script>
+   <style>
+        .open_vip{
+            background-color: lightcyan;;
+        }
+        .ui-border li i em{
+            font-size: 0.75rem;
+        }
+        .aboutpic li{
+            margin-top: 0.6rem
+        }
+        .aboutpic li i img{
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+
+    </style>
+    <script>
+    function show_pass()
+    {
+        $("#pass").html("123456");
+    }
+</script>
+    <section class="ui-panel">
+    <ul class="ui-list ui-border-tb">
+        <li class="ui-border-t">
+            <div class="ui-avatar">
+                <span style="background-image:url(img/about_face.jpg)"></span>
+            </div>
+            <div class="ui-list-info" style="padding-left: 20px">
+                <h4 class="ui-nowrap" style="letter-spacing: 1px;">账号: ebn82b82uq</h4>
+                <h4 class="ui-nowrap" style="letter-spacing: 1px;">密码: <span id="pass">******</span> <a onclick="show_pass()">点击显示</a></h4>
+            </div>
+        </li>
+    </ul>
+</section>
+
+
+<section class="ui-panel" style="background-color: white;">
+
+    <ul class="ui-tiled ui-border" style="height: 80px">
+                <li>
+                    <div>头衔</div>
+                    <i><em>普通会员</em></i></li>
+                <li>
+                    <div>特权</div>
+                    <i><em>观看体验区电影</em></i></li>
+                <li>
+                    <div>操作</div>
+                    <i><em class="open_vip" onclick="pay()">开通会员</em></i></li>
+            </ul>
+
+</section>
+
+<section class="ui-panel" style="background-color: white">
+    <h3 style="text-align: center;line-height: 40px!important;"><span>会员特权</span></h3>
+    <ul class="ui-tiled ui-border-t aboutpic">
+        <li><i class="ui-icon-zy"><img src="about_files/about_zy.png"></i>海量片库</li>
+        <li><i class="ui-icon-tp"><img src="about_files/about_tp.png"></i>海量图库</li>
+        <li><i class="ui-icon-hd"><img src="about_files/about_hd.png"></i>高清专享</li>
+        <li><i class="ui-icon-kf"><img src="about_files/about_kf.png"></i>美女客服</li>
+    </ul>
+</section>
+
+<section class="ui-panel" style="background-color: white">
+    <div class="ui-whitespace" style="padding-left: 10px;padding-top: 10px">
+        <p class="ui-txt-justify">客服电话:<a onclick="pay()">开通会员显示</a></p>        <p class="ui-txt-justify">工作时间:09:00-18:00</p>
+        <p class="ui-txt-justify">注:会员可享受语音视频服务哦</p>
+        <p class="ui-txt-justify">ps:加客服时请备注上您的账号+遇到的问题</p>
+    </div>
+</section>
+    
+    
+
+
+<div style="text-align: center; font-size: 16px;;color: red" class="topay paytip">更多精华资源，仅限永久VIP会员专享&gt;&gt;</div>
+<div class="u-layer-ath" style="display: none">
+    <div class="ath_addhome_area"></div>
+    <div class="ath_close_area" data-role="button"></div>
+</div>
+
+<div id="newstips" class="ui-newstips-wrap">
+    <div class="ui-newstips"><i class="ui-icon-checked-s"></i>
+        <div>第<span id="showno">1599</span>位会员充值成功！</div>
+    </div>
+</div>
+
+<div class="inapptips" style="display: none;"><div class="inapptipsbody"><img src="about_files/tips_wx.png"></div></div>
+<!-- 提示付费窗口 -->
+
+<link rel="stylesheet" type="text/css" href="about_files/dialog.css" media="all">
+
+           <div id="paybox" class="ui-dialog">
+    <div class="ui-dialog-cnt layermchild dialogwidth">
+        <a class="ui-icon-close-page dialogicon" data-role="button"></a>
+
+        <div class="pop">
+            <div class="popup">
+                <div class="popupPic"><img src="about_files/pay_header.jpg" alt=""></div>
+                <div class="popmainbox">
+                    <div class="vipText">开通VIP会员，尽情释放体内的洪荒之力！</div>
+                    <div class="chooseType">
+                        <div class="relative typeList silver-right">
+                            <label>
+                                <div class="type">
+                                    <div class="typePos">
+                                        <input id="vip_radio1" name="vipType" class="grayRadio" value="0" type="radio"><i class="black">包月VIP</i>
+                                        <br><span class="typeGray typeGraytwo">高清资源任意浏览</span>
+                                    </div>
+                                </div>
+                                <div class="price priceMargin">￥38</div>
+                            </label>
+                        </div>
+                        <div class="relative typeList gold-right">
+                            <label>
+                                <div class="type">
+                                    <div class="typePos">
+                                        <input id="vip_radio2" name="vipType" class="grayRadio" value="1" type="radio"><i class="yellow">包年VIP</i>
+                                        <br><span class="typeGray typeGrayone">年费专属资源任意浏览</span>
+                                    </div>
+                                </div>
+                                <div class="price priceMargin">￥68</div>
+                            </label>
+                        </div>
+                        <div class="relative typeList silver-right">
+                            <label>
+                                <div class="type">
+                                    <div class="typePos">
+                                        <input id="vip_radio6" name="vipType" class="grayRadio" value="4" type="radio"><i class="black">永久VIP</i>
+                                        <br><span class="typeGray typeGraytwo">所有资源任意浏览</span>
+                                    </div>
+                                </div>
+                                <div class="price priceMargin">￥98</div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="payType payTypecenter">
+                        <a target="_blank" href="javascript:show_pay(1);" class="payTypea payTypem"><img src="about_files/wx.jpg" alt=""></a>
+                        <p></p>
+                        <a target="_blank" href="javascript:show_pay(3);" class="payTypea payTypem"><img src="about_files/wxsm.jpg" alt=""></a>
+                        <p></p>
+                        <a target="_blank" href="javascript:show_pay(2);" class="payTypea payTypemt"><img src="about_files/zfb.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="paybox1" class="ui-dialog">
+    <div class="ui-dialog-cnt layermchild dialogwidth">
+        <a class="ui-icon-close-page dialogicon" data-role="button"></a>
+
+        <div class="pop">
+            <div class="popup">
+                <div class="popupPic"><img src="about_files/pay_header.jpg" alt=""></div>
+                <div class="popmainbox">
+                    <div class="vipText">开通VIP会员，尽情释放体内的洪荒之力！</div>
+                    <div class="chooseType">
+                        <div class="relative typeList silver-right">
+                            <label>
+                                <div class="type">
+                                    <div class="typePos">
+                                        <input id="vip_radio3" name="vipType" class="grayRadio" value="2" type="radio"><i class="black">包年VIP</i>
+                                        <br><span class="typeGray typeGraytwo">年费专属资源任意浏览</span>
+                                    </div>
+                                </div>
+                                <div class="price priceMargin">￥30</div>
+                            </label>
+                        </div>
+                        <div class="relative typeList silver-right">
+                            <label>
+                                <div class="type">
+                                    <div class="typePos">
+                                        <input id="vip_radio7" name="vipType" class="grayRadio" value="5" type="radio"><i class="black">永久VIP</i>
+                                        <br><span class="typeGray typeGraytwo">所有资源任意浏览</span>
+                                    </div>
+                                </div>
+                                <div class="price priceMargin">￥60</div>
+                            </label>
+                        </div>    
+                    </div>
+                    <div class="payType payTypecenter">
+                        <a target="_blank" href="javascript:show_pay(1);" class="payTypea payTypem"><img src="about_files/wx.jpg" alt=""></a>
+                        <p></p>
+                        <a target="_blank" href="javascript:show_pay(3);" class="payTypea payTypem"><img src="about_files/wxsm.jpg" alt=""></a>
+                        <p></p>
+                        <a target="_blank" href="javascript:show_pay(2);" class="payTypea payTypemt"><img src="about_files/zfb.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="paybox2" class="ui-dialog">
+    <div class="ui-dialog-cnt layermchild dialogwidth">
+        <a class="ui-icon-close-page dialogicon" data-role="button"></a>
+
+        <div class="pop">
+            <div class="popup">
+                <div class="popupPic"><img src="about_files/pay_header.jpg" alt=""></div>
+                <div class="popmainbox">
+                    <div class="vipText">开通VIP会员，尽情释放体内的洪荒之力！</div>
+                    <div class="chooseType">
+                        <div class="relative typeList silver-right">
+                            <label>
+                                <div class="type">
+                                    <div class="typePos">
+                                        <input id="vip_radio4" name="vipType" class="grayRadio" value="3" type="radio"><i class="black">永久VIP</i>
+                                        <br><span class="typeGray typeGraytwo">所有资源任意浏览</span>
+                                    </div>
+                                </div>
+                                <div class="price priceMargin">￥30</div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="payType payTypecenter">
+                        <a target="_blank" href="javascript:show_pay(1);" class="payTypea payTypem"><img src="about_files/wx.jpg" alt=""></a>
+                        <p></p>
+                        <a target="_blank" href="javascript:show_pay(3);" class="payTypea payTypem"><img src="about_files/wxsm.jpg" alt=""></a>
+                        <p></p>
+                        <a target="_blank" href="javascript:show_pay(2);" class="payTypea payTypemt"><img src="about_files/zfb.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<div id="paybox3" class="ui-dialog">
+    <div class="ui-dialog-cnt layermchild dialogwidth">
+        <a class="ui-icon-close-page dialogicon" data-role="button"></a>
+
+        <div class="pop">
+            <div class="popup">
+                <div class="popupPic"><img src="about_files/pay_header.jpg" alt=""></div>
+                <div class="popmainbox">
+                    <div class="vipText">点播该视频，直接观看高清版。</div>
+                    <div class="chooseType">
+                        <div class="relative typeList silver-right">
+                            <label>
+                                <div class="type">
+                                    <div class="typePos">
+                                        <input id="reserveid" value="" type="hidden">
+                                        <input id="vip_radio9" name="vipType" class="grayRadio" value="3" checked="checked" type="radio"><i class="black">点播费</i>
+                                        <br><span class="typeGray typeGraytwo">点播即可观看该电影</span>
+                                    </div>
+                                </div>
+                                <div class="price priceMargin">￥15</div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="payType payTypecenter">
+                        <a target="_blank" href="javascript:show_pay1(1);" class="payTypea payTypem"><img src="about_files/wx.jpg" alt=""></a>
+                        <p></p>
+                        <a target="_blank" href="javascript:show_pay1(2);" class="payTypea payTypemt"><img src="about_files/zfb.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                            
+<form style="display: none" id="pfrom"></form>
+<script>
+                       //type 1 微信 2 支付宝
+    function show_pay(type)
+    {
+        var vipType = $("input[type='radio']:checked").attr("value");
+        var price = 38;
+        var pid = 1;
+        switch (vipType)
+        {
+            case "0":
+                price =38;
+                pid=1;
+                break;
+            case "1":
+                price =68;
+                pid=2;
+                break;
+            case "2":
+                price =30;
+                pid=5;
+                break;
+            case "3":
+                price =30;
+                pid=6;
+                break;
+             case "4":
+                price =98;
+                pid=5;
+                break;
+            case "5":
+                price =60;
+                pid=6;
+                break;   
+             
+        }
+
+        if(type==1)
+        {
+            wx_pay(price,pid);
+        }
+        else if(type==2)
+        {
+            ali_pay(price,pid);
+        }
+        else
+        {
+            wx_sao_pay(price,pid);
+        }
+    }
+                
+    function show_pay1(type)
+    {
+        var o = $('#reserveid').val();
+        var pid = 'r'+o;
+        if(type==1)
+        {
+            wx_pay1(15,pid);
+        }
+        else if(type==2)
+        {
+            ali_pay1(15,pid);
+        }
+        else
+        {
+            wx_sao_pay1(15,pid);
+        }
+    }
+</script>
+
+
+<input id="hd_cid" value="100720" type="hidden">
+<input id="hd_uid" value="2146212" type="hidden">
+<input id="hd_level" value="0" type="hidden">
+<input id="hd_type" value="1" type="hidden">
+
+<script type="text/javascript">
+    $(function(){
+        var dataurl = "/s1/services/gul";
+        $.ajax({
+            type: "get",
+            url: dataurl,
+            dataType: "json",
+            success: function (json) {
+                var level = gc("level");
+                if(isNaN(json.data)){
+                    return;
+                }
+
+                if((level==null && json.data>0)
+                        || (level!=null && level<json.data)) {
+
+                    level =  level==null?0:level;
+                    var content ="";
+                    var viptype ="";
+                    switch (json.data)
+                    {
+                        case 1:
+                            viptype ="黄金会员";
+                            break;
+                        case 2:
+                            viptype ="钻石会员";
+                            break;
+                        case 3:
+                            viptype ="黑金会员";
+                            break;
+                    }
+                    if(level==0)
+                    {
+                        content="恭喜你充值"+viptype+"成功";
+                    }
+                    else
+                    {
+                        content="恭喜你升级"+viptype+"成功";
+                    }
+
+                    sc("level",json.data, "d30");
+
+                    var dia = $.dialog({
+                        title: '提示',
+                        content: content,
+                        button: ["确定"]
+                    });
+                    dia.on("dialog:action", function (e) {
+                        window.location.reload();
+                    })
+                }
+            }
+        })
+    });
+</script>
+<div style="display:none"><script src="about_files/stat.php" language="JavaScript"></script><script src="about_files/core.php" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=1260439399" target="_blank" title="站长统计">站长统计</a></div>
+
+</body></html>
